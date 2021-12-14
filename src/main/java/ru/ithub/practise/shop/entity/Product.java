@@ -4,9 +4,9 @@ public abstract class Product {
     protected String name;
     protected ProductCostType costType;
     protected Double cost;
-    protected Integer amount;
+    protected Double amount;
 
-    public Product(String name, ProductCostType costType, Double cost, Integer amount) {
+    public Product(String name, ProductCostType costType, Double cost, Double amount) {
         this.name = name;
         this.costType = costType;
         this.cost = cost;
@@ -29,7 +29,7 @@ public abstract class Product {
         return cost * amount;
     }
 
-    public Integer getAmount() {
+    public Double getAmount() {
         return amount;
     }
 }
