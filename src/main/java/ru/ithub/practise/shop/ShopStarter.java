@@ -11,9 +11,11 @@ public class ShopStarter {
     public static void main(String[] args) {
         int myBalance = 1000; //наш баланс
 
-        Milk milk = new Milk(1.0); // продукт "молоко"
-        Flour flour = new Flour(2.500); //продукт "мука"
-        Egg egg = new Egg(10); //продукт "яиц"
+        Milk milk = new Milk(2.0); // продукт "молоко"
+        Flour flour = new Flour(0.500); //продукт "мука"
+        Egg egg = new Egg(15); //продукт "яиц"
+
+        System.out.println("\n \n" + milk + "\n" + flour + "\n" + egg + "\n \n");
 
         double totalCost = milk.getTotalCost() + flour.getTotalCost() + egg.getTotalCost(); //итоговая стоимость покупок (1 литр молока, 2 с половиной кг муки и 10 яиц);
 

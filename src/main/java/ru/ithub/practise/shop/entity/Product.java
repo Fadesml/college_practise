@@ -32,4 +32,14 @@ public abstract class Product {
     public Double getAmount() {
         return amount;
     }
+
+    @Override
+    public String toString() {
+        return "Product - " + this.getClass().getName() + " {" +
+                "name='" + name + '\'' +
+                ", costType=" + costType +
+                ", cost=" + cost +
+                ", amount=" + amount +
+                '}';
+    }
 }
